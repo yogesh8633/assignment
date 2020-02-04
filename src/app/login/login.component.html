@@ -1,0 +1,30 @@
+<h2 style="text-align: center;">Login Form</h2>
+<h3 style="text-align: center;">Username:user </h3>
+<h3 style="text-align: center;">Password: password</h3>
+<div class="container card"> 
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)" class="form">
+  
+      <mat-form-field  class="form-element">
+        <input type="text" matInput placeholder="Username" formControlName="username">
+        <mat-error *ngIf="formGroup.controls['username'].invalid">
+          {{getError('user')}}
+        </mat-error>
+      </mat-form-field>
+  
+      <mat-form-field  class="form-element">
+        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}} </mat-icon>
+      
+                <mat-error *ngIf="!formGroup.controls['password'].valid">
+                       <mat-hint *ngIf="!passwordInput.value">Enter your password</mat-hint>
+          {{getError('pass')}}
+        </mat-error>
+      </mat-form-field>
+  
+      <div class="form-element">
+        <button mat-raised-button color="primary"  type="submit" class="submitButton"  [disabled]="!formGroup.valid">Submit Form</button>
+      </div>
+  
+    </form>
+  </div>
+  
