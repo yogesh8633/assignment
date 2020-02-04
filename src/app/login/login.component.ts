@@ -11,10 +11,13 @@ export class LoginComponent {
 
   formGroup: FormGroup;
   post:string;
+  password:string;
   constructor(private formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit() {
     this.createForm();
+
+
   }
 
   createForm() {
@@ -44,11 +47,14 @@ export class LoginComponent {
 
   onSubmit(post) {
     this.post = post;
-    console.log(post)
+    console.log(post);
     if( this.post['username'] === "user" ){
       console.log('hello');
       this.router.navigate(['/tables']);
     }
+
+
   }
+
   hide = true;
 }

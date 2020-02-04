@@ -2,7 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common'; 
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule,
+  MatIconModule
+} from '@angular/material';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table/table.component';
 import { ProfileComponent } from './profile/profile/profile.component';
@@ -19,14 +25,13 @@ import { MaterialModule } from './material.module';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    CommonModule,
     RouterModule,
     MaterialModule
   ],
   declarations: [AppComponent,
     TableComponent,
     ProfileComponent, 
-    ],
+    LoginComponent],
   bootstrap: [AppComponent],
   exports: [
 

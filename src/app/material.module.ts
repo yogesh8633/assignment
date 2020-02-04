@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {
     MatButtonModule,
@@ -11,32 +12,34 @@ import {
     MatMenuModule,
     MatIconModule,
     MatError,
+    MatDatepickerModule,
     MatFormFieldModule
 } from '@angular/material';
 import { LoginComponent } from './login/login.component';
+import { TableComponent } from './table/table/table.component';
 
 
 @NgModule({
     imports: [MatButtonModule,
         MatCheckboxModule,
+        CommonModule,
         MatToolbarModule,
         MatInputModule, 
         MatProgressSpinnerModule,
         MatCardModule,
+        FormsModule,
+        ReactiveFormsModule,
         MatMenuModule,
-        MatError,
         MatFormFieldModule,
+        MatDatepickerModule,
         MatIconModule],
-        declarations:[
-            LoginComponent
-        ],
     exports: [MatButtonModule,
         MatCheckboxModule,
         MatToolbarModule,
-        MatInputModule,
+        MatInputModule, 
         MatProgressSpinnerModule,
         MatCardModule,
-        MatError,
+        MatDatepickerModule,
         MatFormFieldModule,
         MatMenuModule,
         MatIconModule],
