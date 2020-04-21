@@ -1,0 +1,55 @@
+
+.card-1{text-align: -webkit-center;}
+.card-2{text-align: -webkit-center;}
+
+.login-card
+{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.login{
+  max-width: 400px;
+ margin-top: 20px;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+ 
+
+ }
+ .facts{
+  max-width: 400px;
+ margin-top: 20px;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+ background: url('/assets/bg-joker.jpg') no-repeat ;
+ background-size:cover;
+ }
+ ul{
+   color: white;
+   font-weight: bolder;
+ }
+
+ mat-card-title,mat-card-subtitle{
+text-align: center;
+ }
+  button{
+   background: linear-gradient(-45deg,black,lightgrey);
+   color: white;
+ } 
+ mat-form-field{
+   width: 100%;
+ }
+ mat-card-header{
+   justify-content: center;
+   margin-bottom: 30px;
+   padding-top: 30px;
+ }
+ .forgot-pass{
+   text-align: -webkit-right;
+ }
+ .insta-logo{
+    width:10%;
+  }
+  .fb-logo{
+    width:7.5%;
+  }
+  .google-logo{
+    width:12%;
+  }

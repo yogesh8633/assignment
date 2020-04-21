@@ -1,0 +1,67 @@
+
+.footer{
+    min-height: 50px;
+    background: #111;
+    color: #f1f1f1;
+    font-size: medium;
+    width: 100%;
+    bottom: 0;
+    z-index:30;
+    position: fixed;
+
+}
+.footer p{
+padding-top:1%;
+margin-bottom:0;}
+  .footer a{
+
+    right: 18px;
+    bottom: 0px;
+    z-index: 10000;
+    color:#2b3798;
+    padding: 0px 15px;
+    transition:0.5s;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: hsla(0,0%,71%,.15);
+    border: 1px solid rgba(0,0,0,.11);
+    box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.1), 0 2px 6px rgba(0,0,0,.1);
+    display: block;
+  line-height: 44px;
+
+  text-align: center;
+  font-size: 30px;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,8 +15,8 @@ import {
     MatDatepickerModule,
     MatFormFieldModule
 } from '@angular/material';
-import { LoginComponent } from './login/login.component';
-import { TableComponent } from './table/table/table.component';
+import { LoginComponent } from '../login/login.component';
+
 
 
 @NgModule({

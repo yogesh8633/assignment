@@ -1,21 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { ReactiveFormsModule } from '@angular/forms';
-import {
-  MatButtonModule,
-  MatFormFieldModule,
-  MatInputModule,
-  MatRippleModule,
-  MatIconModule
-} from '@angular/material';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { TableComponent } from './table/table/table.component';
-import { ProfileComponent } from './profile/profile/profile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './Material/material.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
 
@@ -26,12 +20,13 @@ import { MaterialModule } from './material.module';
     ReactiveFormsModule,
     AppRoutingModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
-  declarations: [AppComponent,
-    TableComponent,
-    ProfileComponent, 
-    LoginComponent],
+  declarations: [AppComponent,HeaderComponent,
+    LoginComponent,
+    FooterComponent,
+    RegistrationComponent],
   bootstrap: [AppComponent],
   exports: [
 

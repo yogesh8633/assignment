@@ -1,31 +1,63 @@
-<h2 style="text-align: center;">Login Form</h2>
-<h3 style="text-align: center;">Username:user </h3>
-<h3 style="text-align: center;">Password: password</h3>
-<div class="container card"> 
-    <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)" class="form">
-  
-      <mat-form-field  class="form-element">
-        <input type="text" matInput placeholder="Username" formControlName="username">
-        <!-- <mat-error [ngIf]="formGroup.controls['username'].invalid">
-          {{getError('user')}}
-        </mat-error> -->
-      </mat-form-field>
-  
-      <mat-form-field  class="form-element"> 
-        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
-        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}} </mat-icon>
+<header></header>
+<section class="row login-card">
+  <div class="col-sm-6 card-1">
+    <mat-card class="facts">
+      <mat-card-header>
+        <mat-card-title style="color:white">Interesting Facts</mat-card-title>
+        <mat-card-subtitle><a href="#"></a></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul  class="text-left" >
+          <li><p >Apply for online registration</p></li>
+          <li><p >Fill online application form</p></li>
+          <li><p >Upload scanned photos and signature</p></li>
+          <li><p >Pay examination fees</p></li>
+          <li><p >Download admit card</p></li>
+          <li><p >Download admit card</p></li>
+          <li><p >Download admit card</p></li>
+          <li><p >Download admit card</p></li>
 
-      
-                <!-- <mat-error *ngIf="!formGroup.controls['password'].valid">
-                       <mat-hint *ngIf="!passwordInput.value">Enter your password</mat-hint>
-          {{getError('pass')}}
-        </mat-error> -->
-      </mat-form-field>
-  
-      <div class="form-element">
-        <button mat-raised-button color="primary"  type="submit" class="submitButton"  [disabled]="!formGroup.valid">Submit Form</button>
-      </div>
-  
-    </form>
+
+        </ul>
+          </mat-card-content>
+      <mat-card-actions>
+   
+      </mat-card-actions>
+    </mat-card>
   </div>
-  
+  <div class="col-sm-6 card-2">
+    <mat-card class="login">
+      <mat-card-header>
+        <mat-card-title>LOGIN</mat-card-title>
+        <mat-card-subtitle><a href="#">Need an account?</a></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+          <form [formGroup]="loginForm"> 
+        <mat-form-field appearance="outline" >
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Username" formControlName="username" >
+          <mat-icon matSuffix>face</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" >
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" formControlName="password">
+          <mat-icon matSuffix>vpn_key</mat-icon>
+        </mat-form-field>
+      </form>
+      <div class="forgot-pass">
+        <a href="#">Forgot Password?</a>
+        </div>
+          </mat-card-content>
+          <div class="logo">
+            <img  class="insta-logo" src="assets/insta.png">
+            <img class="fb-logo" src="assets/fb.png">
+            <img  class="google-logo" src="assets/google.png">
+          </div>
+      <mat-card-actions>
+        <button mat-raised-button>Submit</button>
+   
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</section>
+<footer></footer>
