@@ -9,14 +9,19 @@
 }
 .login{
   max-width: 400px;
- margin-top: 20px;
- box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+ margin-top: 10px;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+ margin-bottom: 10px;
+ }
+ .logo{ 
  
-
+  width: 55%;
+  height: 55px;
  }
  .facts{
   max-width: 400px;
- margin-top: 20px;
+ margin-top: 10px;
+ margin-bottom: 10px;
  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
  background: url('/assets/bg-joker.jpg') no-repeat ;
  background-size:cover;
@@ -30,8 +35,10 @@
 text-align: center;
  }
   button{
-   background: linear-gradient(-45deg,black,lightgrey);
-   color: white;
+  // background: linear-gradient(-45deg,black,lightgrey);
+  background:black; 
+  color: white;
+  
  } 
  mat-form-field{
    width: 100%;
@@ -39,17 +46,21 @@ text-align: center;
  mat-card-header{
    justify-content: center;
    margin-bottom: 30px;
-   padding-top: 30px;
+   padding-top: 20px;
  }
  .forgot-pass{
    text-align: -webkit-right;
  }
  .insta-logo{
-    width:10%;
+    width:20%;
   }
   .fb-logo{
-    width:7.5%;
+    width:14.5%;
   }
   .google-logo{
-    width:12%;
+    width:24%;
+  }
+  // 
+  .login-card{
+    background-image: url('/assets/bg-bulb.jpg');
   }

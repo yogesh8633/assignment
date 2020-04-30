@@ -3,20 +3,18 @@
   <div class="col-sm-6 card-1">
     <mat-card class="facts">
       <mat-card-header>
-        <mat-card-title style="color:white">Interesting Facts</mat-card-title>
+        <mat-card-title style="color:#28a745; font-size: 25px; ">Interesting Facts</mat-card-title>
         <mat-card-subtitle><a href="#"></a></mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <ul  class="text-left" >
-          <li><p >Apply for online registration</p></li>
-          <li><p >Fill online application form</p></li>
-          <li><p >Upload scanned photos and signature</p></li>
-          <li><p >Pay examination fees</p></li>
-          <li><p >Download admit card</p></li>
-          <li><p >Download admit card</p></li>
-          <li><p >Download admit card</p></li>
-          <li><p >Download admit card</p></li>
-
+          <li><p >North Korea and Cuba are the only places you can't buy Coca-Cola.</p></li>
+          <li><p >The entire world's population could fit inside Los Angeles.</p></li>
+          <li><p >There are more twins now than ever before.</p></li>
+          <li><p >The hottest chili pepper in the world is so hot it could kill you.</p></li>
+          <li><p >More people visit France than any other country. </p></li>
+          <li><p >The world's quietest room is located at Microsoft's headquarters in Washington state.</p></li>
+        <p style="color:#28a745; font-size: 20px; text-align: right;">--For More Register Yourself--</p>
 
         </ul>
           </mat-card-content>
@@ -26,38 +24,50 @@
     </mat-card>
   </div>
   <div class="col-sm-6 card-2">
-    <mat-card class="login">
+   
+      <mat-card class="login">
+        <img class="logo" src="/assets/logo.PNG">
+
       <mat-card-header>
         <mat-card-title>LOGIN</mat-card-title>
-        <mat-card-subtitle><a href="#">Need an account?</a></mat-card-subtitle>
+        <mat-card-subtitle><a routerLink="/registration">Need an account?</a></mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
+        
           <form [formGroup]="loginForm"> 
         <mat-form-field appearance="outline" >
-          <mat-label>Username</mat-label>
-          <input matInput placeholder="Username" formControlName="username" >
+          <mat-label>Factomania Id</mat-label>
+          <input matInput placeholder="Factomania Id" formControlName="factomaniaId" >
           <mat-icon matSuffix>face</mat-icon>
+          <mat-error>
+            Username is required 
+        </mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline" >
           <mat-label>Password</mat-label>
-          <input matInput placeholder="Password" formControlName="password">
+          <input matInput placeholder="Password" type="password" formControlName="password">
           <mat-icon matSuffix>vpn_key</mat-icon>
+          <mat-error>
+            Password is required
+        </mat-error>
         </mat-form-field>
       </form>
-      <div class="forgot-pass">
+      <div class="forgot-pass">     
         <a href="#">Forgot Password?</a>
         </div>
+       
+        
           </mat-card-content>
           <div class="logo">
             <img  class="insta-logo" src="assets/insta.png">
             <img class="fb-logo" src="assets/fb.png">
-            <img  class="google-logo" src="assets/google.png">
+            <img  class="google-logo"  src="assets/google.png">
           </div>
       <mat-card-actions>
-        <button mat-raised-button>Submit</button>
+        <button mat-raised-button (click)="submit()" [disabled]="loginForm.invalid" >Submit</button>
    
       </mat-card-actions>
     </mat-card>
   </div>
 </section>
-<footer></footer>
+<footer></footer>  

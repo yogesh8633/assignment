@@ -20,19 +20,19 @@ import {
   MatProgressBarModule,
   MatProgressSpinnerModule,
   MatRadioModule,
-  MatRippleModule,
+  MatRippleModule,     
   MatSelectModule,
   MatSidenavModule,
   MatSliderModule,
   MatSlideToggleModule,
   MatSnackBarModule,
-  MatTabsModule,
+  MatTabsModule,   
   MatToolbarModule,
   MatTooltipModule,
   
 } from '@angular/material';
 
-const MATERIAL_MODULES = [ 
+const MATERIAL_MODULES = [      
   MatAutocompleteModule,
   MatButtonModule,
   MatButtonToggleModule,

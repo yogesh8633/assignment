@@ -1,0 +1,51 @@
+.registration{
+  background-image: url('/assets/bg-bulb.jpg');
+width:101%
+}
+.registration-form{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: -webkit-right;
+}
+.registration-card{
+  width:100%;
+  align-items: center;
+  text-align: center;
+  @media only screen and (max-width: 768px ) {
+    width: 90%;
+
+}
+
+}
+#login-intro {
+  padding: 56px 20px 0px 20px;
+text-align: center;  }
+.tw::after{
+  content: " ";
+  white-space: pre;
+}
+
+ .logo {
+                margin-bottom: 32px;
+                img{
+                    width: 37%;
+                    height: 100%;
+                    padding-top:20px;
+
+                }
+            }
+
+            .description {
+              padding-top: 10%;
+              font-size: 14px;
+              max-width: 600px;
+              color:black;
+
+          }
+
+          button{
+            // background: linear-gradient(-45deg,black,lightgrey);
+            background:black; 
+            color: white;
+            
+           } 

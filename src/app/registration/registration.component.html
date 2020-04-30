@@ -1,1 +1,141 @@
+<header></header>
+<div class="registration row">
 
+  <div class="col-md-7 col-xs-12 d-none d-md-block">
+    <div id="login-intro">
+
+      <div class="logo">
+        <img src="assets/logo.PNG">
+      </div>
+
+
+
+      <div class="description">
+        <h3 class="tw" #tw2> </h3>
+        <h3 #tw3></h3>
+
+        <!--  -->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-5 col-xs-12 registration-form ">
+
+    <mat-card class="registration-card">
+      <mat-card-header>
+
+        <mat-card-title>Registration Form</mat-card-title>
+        <mat-card-subtitle>
+          <a routerLink="/login">Alreay registered?</a>
+
+        </mat-card-subtitle>
+
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="registrationForm">
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>factomania Id</mat-label>
+            <input matInput formControlName="factomaniaId" readonly class="userId_font">
+
+          </mat-form-field>
+          <mat-form-field class="col-md-6" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="firstname" formControlName="firstname">
+            <mat-icon matSuffix>face</mat-icon>
+            <mat-error>
+              First Name is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-md-6" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="lastname" formControlName="lastname">
+            <mat-icon matSuffix>face</mat-icon>
+            <mat-error>
+              Last Name is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Date Of Birth</mat-label>
+            <input matInput formControlName="dob" [matDatepicker]="picker" readonly>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker disabled="false" #picker></mat-datepicker>
+            <mat-error>
+              Date of Birth is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Select Gender</mat-label>
+            <mat-select formControlName="gender">
+              <mat-option value="Female">Female</mat-option>
+              <mat-option value="Male">Male</mat-option>
+              <mat-option value="Other">Others</mat-option>
+            </mat-select>
+            <mat-error>
+              Interested In is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Email ID</mat-label>
+            <input matInput placeholder="Email ID" formControlName="email">
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-error>
+              Email ID is required
+            </mat-error>
+
+          </mat-form-field>
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" type="password" formControlName="password">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+            <mat-error>
+              Password is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Mobile No.</mat-label>
+            <span matPrefix>+91&nbsp;</span>
+            <input matInput #mobile maxlength="10" placeholder="Mobile" formControlName="mobile" onPaste="return false"
+              onkeypress="return String.fromCharCode(event.charCode).match(/[^0-9]/g) === null">
+            <mat-icon matSuffix>phone</mat-icon>
+            <mat-hint align="end">{{mobile.value.length}} / 10</mat-hint>
+            <mat-error>
+              Mobile No. is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Interested in</mat-label>
+            <mat-select formControlName="fav">
+              <mat-option value="entertainment ">Entertainment</mat-option>
+              <mat-option value="science-nature">Science and Nature</mat-option>
+              <mat-option value="world-history">World and History</mat-option>
+            </mat-select>
+            <mat-error>
+              Interested In is required
+            </mat-error>
+          </mat-form-field>
+
+
+        </form>
+        <div class="submit-button">
+          <button mat-raised-button (click)="registration()" [disabled]="registrationForm.invalid">Submit</button>
+        </div>
+      </mat-card-content>
+
+
+    </mat-card>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer></footer>

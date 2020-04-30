@@ -1,0 +1,42 @@
+
+  .science-nature{
+    background-image: url('/assets/bg-bulb.jpg');
+  }
+
+  .card-body{
+    text-align:left;
+
+    border: 1px solid grey;
+    }
+    .main-head{
+    background:#28a745;}
+    inner-head{
+    background:#c8f5f5;}
+  .main-body:hover{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      .card-header{background: #28a745;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    min-height: 1px;
+}
+    .inner-head{
+     background:#75f34b;
+    }
+     .inner-head-1{
+      background: white;
+  }
+ .exam{
+    color: #111111;
+    font-weight: 500;
+}
+button{ 
+    margin-left: 120px;
+margin-right: 120px;
+}
+.arrow{
+    font-size: large;
+}

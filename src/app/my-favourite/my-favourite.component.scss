@@ -1,0 +1,60 @@
+
+
+
+    #result {
+      // width: 100%;
+      // background: url('/assets/dark-material-bg.jpg') no-repeat;
+      // background-size: cover;
+
+      #result-form-wrapper {
+          flex: 1 0 auto;
+          padding: 32px;
+          text-align: -webkit-center;
+
+
+          @media only screen and (max-width: 768px ){
+              padding: 16px;
+          }
+
+          #result-form {
+              background-color: white;
+              width: 384px;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+              max-width: 384px;
+              text-align: center;
+
+              @media only screen and (max-width: 768px ){
+                  width: 100%;
+              }
+
+              .top {
+                  width: 100%;
+                  padding: 25px;
+
+                  @media only screen and (max-width: 768px ){
+                      padding: 24px;
+                  }
+
+                  .logo {
+                      width: 128px;
+                      margin: 25px auto;
+                  }
+
+                  > .title {
+                      font-size: 21px;
+                      margin-top: 16px;
+                  }
+
+                  .subtitle {
+                      margin: 16px auto 0 auto;
+                      text-align: center;
+                      max-width: 300px; 
+                      font-size: 15px; 
+                  }
+
+              }
+
+          }
+      }
+  }

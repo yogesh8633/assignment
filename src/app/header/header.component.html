@@ -4,9 +4,13 @@
 
         <div class="row p-2">
             <div class="col-sm-6 text-center text-sm-left">
-                <span>&nbsp;&nbsp; <strong> </strong><i class="fa fa-envelope"></i>&nbsp;&nbsp; yogesh.gupta93@rediffmail.com
+                <span *ngIf="!alreadyLogin">&nbsp;&nbsp; <strong> </strong><i class="fa fa-envelope"></i>&nbsp;&nbsp; yogesh.gupta93@rediffmail.com
                     &nbsp;&nbsp;|&nbsp;&nbsp;<strong> </strong> <i class="fa fa-phone"></i> &nbsp;&nbsp;9711708633
                 </span>
+                <span *ngIf="alreadyLogin">&nbsp;&nbsp; <strong> </strong><i class="fa fa-envelope"></i>&nbsp;&nbsp; Welcome Yogesh Gupta
+                  &nbsp;&nbsp;|&nbsp;&nbsp;<strong> </strong> <i class="fa fa-phone"></i> &nbsp;&nbsp;9711708633
+              </span>
+
             </div>
             <div class="col-sm-6 text-center text-sm-right">
                 <div class="mr-2">{{today | date:'fullDate'}} {{today | date:'h:mm:ss a'}}</div>
@@ -17,7 +21,48 @@
 
 
 </section>
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#" *ngIf="!alreadyLogin"routerLink="/login" >#Factomania</a>
+    <a class="navbar-brand" href="#" *ngIf="alreadyLogin"routerLink="/introduction" >#Factomania</a>
 
+    <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link"href="#" *ngIf="!alreadyLogin" routerLink="/home" routerLinkActive="active" >Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" *ngIf="alreadyLogin" routerLink="/introduction" routerLinkActive="active">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"href="#" *ngIf="!alreadyLogin" routerLink="/login" (click)=header() routerLinkActive="active"  >Entertainment<span class="sr-only">(current)</span></a>
+          <a class="nav-link"href="#" *ngIf="alreadyLogin" routerLink="/entertainment" routerLinkActive="active"  >Entertainment<span class="sr-only">(current)</span></a>
+
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" *ngIf="!alreadyLogin" (click)=header() routerLink="/login" routerLinkActive="active" >Science and Nature<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" *ngIf="alreadyLogin" routerLink="/science-nature" routerLinkActive="active" >Science and Nature<span class="sr-only">(current)</span></a>
+
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" *ngIf="!alreadyLogin" (click)=header() routerLink="/login" routerLinkActive="active" >World and History<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"  *ngIf="alreadyLogin" routerLink="/world-history" routerLinkActive="active">World and History<span class="sr-only">(current)</span></a>
+
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0" *ngIf="!alreadyLogin">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <button mat-raised-button  color="accent" *ngIf="alreadyLogin" routerLink="/my-profile"><i class="fa fa-id-card mr-1"></i>My Profile </button>&nbsp;
+      <button mat-raised-button color="primary"  *ngIf="alreadyLogin" routerLink="/my-favourite"><i class="fa fa-heart mr-1"></i>My Favourites</button>&nbsp;
+      <button mat-raised-button color="basic"  *ngIf="alreadyLogin" (click) ="logout()"><i class="fa fa-power-off mr-1"></i>Logout</button>
+    </div>
+  </nav>
 
 <!-- <section class="bg-white navigation">
 

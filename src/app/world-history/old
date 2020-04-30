@@ -1,0 +1,137 @@
+<section class="entertainment">
+<div class="heading ">
+    <h3>Welcome To World And History</h3>
+</div>
+<section class="row">
+   <div class="col-sm-3 example-card">
+    <mat-card >
+        <mat-card-header> 
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Business and Economy  </mat-card-title>
+        
+        </mat-card-header>     
+        <mat-card-content>
+          <p>
+            Business and economy may not be the most interesting topics. Fortunately, we found a way to make it
+             entertaining! If you think about it, we deal with business every time we buy something.
+
+            So take your favorite business, like Coca-Cola or Starbucks, and find out all there is to know here!      
+          </p>  </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button  class="button-1"color="accent"><i class="fa fa-heart mr-1 "></i>LIKE</button>      
+          <button mat-raised-button class="button-1"color="basic"><i class="fa fa-share mr-1"></i>SHARE</button>       
+          <button mat-raised-button class="button-2"color="primary"><i class="far fa-hand-point-right"></i>FOR MORE</button>
+        </mat-card-actions>
+      </mat-card>
+   </div>
+   <div class="col-sm-3 example-card">
+    <mat-card >
+      <mat-card-header> 
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Crime and Law</mat-card-title>
+      
+      </mat-card-header>     
+      <mat-card-content>
+        <p>
+            The justice system seeks to bring order and stability to a world that, otherwise, would be in constant chaos.
+             As it turns out, there are actually quite a few contradictions and absurd laws that simply make a mockery of
+              the entire system!
+
+            Laws still in place such as “you cannot carry a plank along the pavement” or “you’re not allowed to be drunk 
+            in a pub” are found in the UK, while the USA is possibly even stranger with laws preventing things such as
+             eyeball selling in Texas or bear wrestling matches in Alabama!
+        </p> </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button  class="button-1"color="accent"><i class="fa fa-heart mr-1 "></i>LIKE</button>      
+        <button mat-raised-button class="button-1"color="basic"><i class="fa fa-share mr-1"></i>SHARE</button>       
+        <button mat-raised-button class="button-2"color="primary"><i class="far fa-hand-point-right"></i>FOR MORE</button>
+      </mat-card-actions>
+    </mat-card>
+   </div>
+   <div class="col-sm-3 example-card">
+    <mat-card >
+      <mat-card-header> 
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>History</mat-card-title>
+      
+      </mat-card-header>     
+      <mat-card-content>
+        <p>
+            "Those who do not learn history are doomed to repeat it.” This infamous quote is known by pretty much everyone. 
+            But just how much history do you actually know? Certainly you know the basics, but there is even much left to be 
+            learned about those.
+
+            With a topic like history, there’s hours of facts here that will be both educational and mind blowing!  </p>   
+      </mat-card-content> <mat-card-actions>
+        <button mat-raised-button  class="button-1"color="accent"><i class="fa fa-heart mr-1 "></i>LIKE</button>      
+        <button mat-raised-button class="button-1"color="basic"><i class="fa fa-share mr-1"></i>SHARE</button>       
+        <button mat-raised-button class="button-2"color="primary"><i class="far fa-hand-point-right"></i>FOR MORE</button>
+      </mat-card-actions>
+   
+    </mat-card>
+   </div>
+    </section>
+    <section class="row">
+        <div class="col-sm-3 example-card">
+          <mat-card >
+            <mat-card-header> 
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Holidays and Events  </mat-card-title>
+            
+            </mat-card-header>     
+            <mat-card-content>
+              <p>
+                Almost everyone loves holidays, yet surprisingly very little facts are actually known about the origin
+                s or history behind them. Seeing family on Christmas, trick-or-treating on Halloween, or exchanging gifts 
+                with your loved one on Valentine’s Day are traditions that have passed down through the ages, but what 
+                actually started these holidays?                    </p>
+           <
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button  class="button-1"color="accent"><i class="fa fa-heart mr-1 "></i>LIKE</button>      
+              <button mat-raised-button class="button-1"color="basic"><i class="fa fa-share mr-1"></i>SHARE</button>       
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="col-sm-3 example-card">
+          <mat-card >
+            <mat-card-header> 
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Religion</mat-card-title>
+            
+            </mat-card-header>     
+            <mat-card-content>
+              <p>
+                You don’t have to be religiously inclined to find the facts posted in the Religion category informative
+                 and intriguing. Details about religions all across the world are discussed in a non-biased way. Learn not 
+                 only why gifts are given at Christmas, but about the Mormons, Jedi Knights, and even John the Baptist!
+                </p>        </mat-card-content>    <mat-card-actions>
+              <button mat-raised-button  class="button-1"color="accent"><i class="fa fa-heart mr-1 "></i>LIKE</button>      
+              <button mat-raised-button class="button-1"color="basic"><i class="fa fa-share mr-1"></i>SHARE</button>       
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="col-sm-3 example-card">
+          <mat-card >
+            <mat-card-header> 
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Travel and Tourism  </mat-card-title>
+            
+            </mat-card-header>     
+            <mat-card-content>
+              <p>
+                Here at The Fact Site we have an array of facts spanning every area of travel, tourism and general 
+                geographical topics, from letting you in on the world’s longest place names to the smallest countries. 
+                We share facts, figures and information from every corner of the map.          
+            </p>
+           </mat-card-content>
+            
+                <mat-card-actions>
+              
+                    <button mat-raised-button  class="button-1"color="accent"><i class="fa fa-heart mr-1 "></i>LIKE</button>      
+              <button mat-raised-button class="button-1"color="basic"><i class="fa fa-share mr-1"></i>SHARE</button>       
+            </mat-card-actions>
+          </mat-card>
+        </div>
+         </section>
+        </section>

@@ -1,2 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "tohoma", sans-serif;
+  margin: 0;
+  padding: 0;
+  /*  background-color: #acaaaa52; */
+}
+
+*/ .scroll {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-x: auto;
+  text-align: justify;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #75f34b;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #75f34b;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

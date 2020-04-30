@@ -7,14 +7,13 @@
     width: 100%;
     bottom: 0;
     z-index:30;
-    position: fixed;
-
 }
 .footer p{
 padding-top:1%;
 margin-bottom:0;}
   .footer a{
 
+     position: fixed;
     right: 18px;
     bottom: 0px;
     z-index: 10000;
@@ -65,3 +64,43 @@ margin-bottom:0;}
 
 
 
+
+
+
+/*#back {
+
+      position: fixed;
+      right: 18px;
+      bottom: 0px;
+      z-index: 10000;
+      color:#acdaed;
+      padding: 0px 15px;
+      transition:0.5s;
+      font-size: 28px;
+      visibility:hidden;
+      z-index: 1000;
+}
+
+.show {
+  visibility:visible !important;
+}
+
+.social-footer{
+color: #ed6d2e;
+cursor: pointer;
+}
+.footer-contact{
+font-size: 20px;
+}
+.logo2{
+position: absolute;
+right: 0;
+}
+.footer h2:hover{
+border-bottom: 1px solid #ed6d2e
+}
+@media only screen and (max-width: 600px) {
+.dropdown-content {
+min-width: 90%;
+}
+} */

@@ -18,7 +18,23 @@ body{
     color: #fff;
 }
 
+.nav-link{
+  color: white !important;
+}
+.navbar-light .navbar-nav .nav-link.active, .nav-link:hover >li {
+  color: red !important;
+}
+.navbar-brand{
+  color: #28a745;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: cursive;
 
+}
+
+.navbar{
+  background-color: black !important;
+}
 
 
 
