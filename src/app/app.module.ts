@@ -20,6 +20,10 @@ const routes: Routes = [
     component: HomePageComponent
   },
   {
+    path: 'home',
+    component: HomePageComponent
+  },
+  {
     path: 'registration',
     component: RegistrationComponent
   },

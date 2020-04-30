@@ -51,14 +51,14 @@ export class RegistrationComponent implements OnInit {
 
     this.registrationForm = this.formBuilder.group({
       'factomaniaId':[this.factomaniaId, Validators.required],
-      'firstname': ['Manisha', Validators.required],
-      'lastname': ['Gupta', Validators.required],
+      'firstname': ['', Validators.required],
+      'lastname': ['', Validators.required],
       'dob': [null, Validators.required],
-      'email': ['manishagupta9016@gmail.conm', [Validators.required, Validators.pattern(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)]],
-      'password': ['mani', Validators.required],
-      'mobile': [9716718367, Validators.required],
-      'fav': ['Animals', Validators.required],
-      'gender': ['Female', Validators.required]
+      'email': ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)]],
+      'password': ['', Validators.required],
+      'mobile': [null, Validators.required],
+      'fav': ['', Validators.required],
+      'gender': ['', Validators.required]
 
     });
   }

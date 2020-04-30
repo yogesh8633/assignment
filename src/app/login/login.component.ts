@@ -17,9 +17,8 @@ export class LoginComponent {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      factomaniaId: ['9716718367', [Validators.required]],
-      password: ['mani', Validators.required]
-      // Validators.pattern(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)]
+      factomaniaId: ['', [Validators.required]],
+      password: ['', Validators.required]
 
     })
   }
