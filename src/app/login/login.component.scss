@@ -64,3 +64,22 @@ text-align: center;
   .login-card{
     background-image: url('/assets/bg-bulb.jpg');
   }
+  .button-facebook,
+.button-instagram,
+.button-twitter,
+.button-whatsapp {
+    padding: 5px;
+    font-size: 30pt;
+}
+.button-facebook {
+    color: #3C5A99;
+}
+.button-instagram {
+  color: #893dc2;
+}
+.button-twitter {
+    color: #1DA1F2;
+}
+.button-whatsapp {
+    color: #4AC959;
+}

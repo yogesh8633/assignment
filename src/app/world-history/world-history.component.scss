@@ -102,6 +102,10 @@
   }
   .details{
     margin-top: 26px;
+    @media only screen and (max-width: 768px ) {
+      overflow: scroll;
+  
+  }
   } 
   h3{
     text-align: center;
@@ -111,7 +115,10 @@
     text-align: center;
     color: red !important;
     margin-top: 15px;
+   
   }
+
+
   button{
     margin:10px 66px 10px 66px !important;
   }

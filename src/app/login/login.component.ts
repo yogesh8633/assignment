@@ -22,30 +22,52 @@ export class LoginComponent {
 
     })
   }
-  submit() {
-    this.loginService.login(this.loginForm.value).subscribe(data => {
-      if (data.status === "success") {
-        StorageService.setItem("factomaniaId", this.loginForm.value.factomaniaId);
-        this.router.navigate(['/introduction']);
-      }
-      else {
-        Swal.fire({
-          icon: 'warning',
-          title: 'Incorrect Username or Password',
-          showClass: {
-            popup: 'animated fadeInDown faster'
-          },
-          hideClass: {
-            popup: 'animated fadeOutUp faster'
-          },
-          allowOutsideClick: false,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'OK!',
+  // submit() {
+  //   this.loginService.login(this.loginForm.value).subscribe(data => {
+  //     if (data.status === "success") {
+  //       StorageService.setItem("factomaniaId", this.loginForm.value.factomaniaId);
+  //       this.router.navigate(['/introduction']);
+  //     }
+  //     else {
+  //       Swal.fire({
+  //         icon: 'warning',
+  //         title: 'Incorrect Username or Password',
+  //         showClass: {
+  //           popup: 'animated fadeInDown faster'
+  //         },
+  //         hideClass: {
+  //           popup: 'animated fadeOutUp faster'
+  //         },
+  //         allowOutsideClick: false,
+  //         confirmButtonColor: '#3085d6',
+  //         confirmButtonText: 'OK!',
 
-        })
-      }
+  //       })
+  //     }
 
-    })
-  }
+  //   })
+  // }
+submit()
+{ if(this.loginForm.value.factomaniaId === 'admin' )
+  {  StorageService.setItem("factomaniaId", this.loginForm.value.factomaniaId);
+    this.router.navigate(['/introduction']);}
+  else {
+  Swal.fire({
+            icon: 'warning',
+            title: 'Incorrect Username or Password',
+            showClass: {
+              popup: 'animated fadeInDown faster'
+            },
+            hideClass: {
+              popup: 'animated fadeOutUp faster'
+            },
+            allowOutsideClick: false,
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK!',
+  
+          })
+        }
 }
+}   
+
 
